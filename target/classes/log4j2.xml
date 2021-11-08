@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="basePath">
+            ./target/reports/logs
+        </Property>
+    </Properties>
+    <Appenders>
+        <RollingFile name="File1" fileName="${basePath}/SettingBeforeTests.log"
+                     filePattern="${basePath}/SettingBeforeTests-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="5000"/>
+        </RollingFile>
+        <RollingFile name="File2" fileName="${basePath}/RegistrationAsCustomerTestCase.log"
+                     filePattern="${basePath}/RegistrationAsCustomerTestCase-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="5000"/>
+        </RollingFile>
+        <RollingFile name="File3" fileName="${basePath}/MobileTestBase.log"
+                     filePattern="${basePath}/MobileTestBase-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="5000"/>
+        </RollingFile>
+        <RollingFile name="File4" fileName="${basePath}/DatesChoosePage.log"
+                     filePattern="${basePath}/DatesChoosePage-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="5000"/>
+        </RollingFile>
+        <RollingFile name="File5" fileName="${basePath}/HotelsSearchPage.log"
+                     filePattern="${basePath}/HotelsSearchPage-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="5000"/>
+        </RollingFile>
+        <RollingFile name="File6" fileName="${basePath}/RoomChoosePage.log"
+                     filePattern="${basePath}/RoomChoosePage-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="5000"/>
+        </RollingFile>
+
+        <RollingFile name="File7" fileName="${basePath}/LoginAsCustomerTestCase.log"
+                     filePattern="${basePath}/LoginAsCustomerTestCase-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="5000"/>
+        </RollingFile>
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.webinitialization.WebSettingBeforeTests" level="trace" additivity="false">
+            <AppenderRef ref="File1"/>
+        </Logger>
+        <Logger name="com.webapptestcases.RegistrationAsCustomerTestCase" level="trace" additivity="false">
+            <AppenderRef ref="File2"/>
+        </Logger>
+        <Logger name="com.mobileinitialization.MobileTestBase" level="trace" additivity="false">
+            <AppenderRef ref="File3"/>
+        </Logger>
+        <Logger name="com.androidScreenResources.DatesChoosePage" level="trace" additivity="false">
+            <AppenderRef ref="File4"/>
+        </Logger>
+        <Logger name="com.androidScreenResources.HotelsSearchPage" level="trace" additivity="false">
+            <AppenderRef ref="File5"/>
+        </Logger>
+        <Logger name="com.androidScreenResources.RoomChoosePage" level="trace" additivity="false">
+            <AppenderRef ref="File6"/>
+        </Logger>
+        <Logger name="com.webapptestcases.LoginAsCustomerTestCase" level="trace" additivity="false">
+            <AppenderRef ref="File7"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

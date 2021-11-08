@@ -1,0 +1,4 @@
+17:14:35.614 [main] INFO  com.webapptestcases.LoginAsCustomerTestCase - The cookies are cleaned and web window is maximized
+17:14:39.373 [main] INFO  com.webapptestcases.LoginAsCustomerTestCase - The main window is opened
+17:14:41.880 [main] INFO  com.webapptestcases.LoginAsCustomerTestCase - The main window is opened
+17:14:42.780 [main] INFO  com.webapptestcases.LoginAsCustomerTestCase - The form for login is filled in

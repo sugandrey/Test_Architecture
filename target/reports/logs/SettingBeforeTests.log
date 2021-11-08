@@ -1,0 +1,2 @@
+17:14:35.435 [main] INFO  com.webinitialization.WebSettingBeforeTests - The chrome browser is initialized
+17:14:57.268 [main] INFO  com.webinitialization.WebSettingBeforeTests - The chrome browser is teardown
